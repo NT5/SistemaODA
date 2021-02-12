@@ -1,0 +1,10 @@
+{% extends 'base.twig' %}
+
+{% block main %}
+<p>Hola mi nombre es {{ nombre }}!</p>
+<div class="card">
+  <div class="card-body">
+    El usuario de la base de datos es {{ usuario1.getNombreUsuario }}
+  </div>
+</div>
+{% endblock %}
