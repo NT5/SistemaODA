@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"terminal.explorerKind": "external",
+		"files.associations": {
+			"*.html": "twig"
+		},
+		"emmet.includeLanguages": {
+			"twig": "html"
+		},
+		"sql-formatter.uppercase": true
+	}
+}

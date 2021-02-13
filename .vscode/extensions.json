@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "mblode.twig-language-2",
+        "bmewburn.vscode-intelephense-client",
+        "adpyke.vscode-sql-formatter"
+    ]
+}
