@@ -1,0 +1,36 @@
+{% extends "base.twig" %}
+
+{% block main %}
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th scope="col">Id Tema</th>
+				<th scope="col">Nombre del tema</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for tema in listaTemas %}
+				<tr>
+					<th>{{ tema.getId_tema }}</th>
+					<td>{{ tema.getNombre_tema }}</td>
+					<td>
+						<form method="post">
+							<button type="submit" name="borrar" value="{{ tema.getId_tema }}" type="button" class="btn btn-danger">Eliminar</button>
+						</form>
+					</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	<br/>
+
+	<form method="post">
+		<div class="form-group">
+			<label for="nombreTema">Nombre del nuevo tema</label>
+			<input type="text" class="form-control" id="nombreTema" name="nombreTema" aria-describedby="temaAyuda" placeholder="Escribe el nombre del tema">
+			<small id="temaAyuda" class="form-text text-muted">Por favor escribe el nombre del nuevo tema</small>
+		</div>
+		<button type="submit" class="btn btn-primary">Guardar</button>
+	</form>
+{% endblock %}

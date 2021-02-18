@@ -12,3 +12,17 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 	`nombre` VARCHAR(50) NOT NULL,
 	PRIMARY KEY (`id_usuario`)
 );
+
+CREATE TABLE IF NOT EXISTS `temas` (
+	`id_tema` INT NOT NULL AUTO_INCREMENT,
+	`nombre_tema` VARCHAR(50) NOT NULL,
+	PRIMARY KEY (`id_tema`)
+);
+
+CREATE TABLE IF NOT EXISTS `lecciones` (
+	`id_leccion` INT NOT NULL AUTO_INCREMENT,
+	`id_tema` INT NOT NULL,
+	`nombre_leccion` VARCHAR(200) NOT NULL,
+	`contenido_leccion` TEXT NOT NULL,
+	PRIMARY KEY (`id_leccion`)
+);
